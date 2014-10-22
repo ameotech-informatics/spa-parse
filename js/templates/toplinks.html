@@ -1,0 +1,20 @@
+﻿<nav class="navbar navbar-default" ng-show="showLinks" role="navigation">
+    <div class="container-fluid">
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li class="active"><a class="" href="#/home" style="color: #387db8;">Home</a></li>
+                <li><a href="#/search" class="active" id="addfriend">Add Friends</a></li>
+                <li><a href="#/friendrequests" style="color: #387db8" id="friendrequest">Friend Requests
+        <span class="badge pull-right" ng-show="TotalRequests>0" ng-bind="TotalRequests"></span>
+                </a></li>
+                <li><a href="javascript://" ng-click="Logout()" style="color: #387db8;" id="signout">Sign Out</a></li>
+            </ul>
+
+        </div>
+
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+</nav>

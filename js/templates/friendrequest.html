@@ -1,0 +1,37 @@
+﻿<div class="container">
+    <div class="row">
+        <div ng-show="FriendRequests.length<=0">
+            You have no friend requests.
+        </div>
+        <div class="" ng-show="FriendRequests.length>0">
+            <div class="panel panel-default">
+                <!-- Default panel contents -->
+                <div class="panel-heading">Friend Requests</div>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr ng-repeat="friendRequestUser in FriendRequests">
+                            <td>{{friendRequestUser.Username}}</td>
+
+                            <td>
+                                <div ng-show="friendRequestUser.RequestSent==false">
+                                    <input type="button" class="btn btn-primary" ng-click="AcceptFriend(friendRequestUser,false,$event)" value="Accept" />
+                                    <input type="button" class="btn btn-danger" ng-click="AcceptFriend(friendRequestUser,true,$event)" value="Deny" />
+                                </div>
+                                <div ng-show="friendRequestUser.RequestSent==true">
+                                    Processing!...
+                                </div>
+                            </td>
+
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

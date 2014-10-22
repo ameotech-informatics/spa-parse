@@ -1,0 +1,32 @@
+﻿<div class="container">
+    <div class="row">
+        <div role="alert" class="alert alert-success" ng-show="message!=''">
+            <strong>Success!</strong> {{message}}   
+        </div>
+        <br />
+        <input type="text" placeholder="Enter name of friend" ng-model="Search" />
+        <!--  <input type="button" value="Seach" ng-click="SearchUsers()" />-->
+        <button type="submit" ng-click="SearchUsers()" class="btn btn-primary">Search</button>
+
+        <div ng-show="Users.length>0">
+            <div class="panel panel-default">
+                <!-- Default panel contents -->
+                <div class="panel-heading">Users</div>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr ng-repeat="friendRequestUser in Users">
+                            <td>{{friendRequestUser.UserName}}</td>
+                            <td>{{friendRequestUser.Password}}</td>
+                            <td><a href="javascript://" class="btn btn-primary" ng-click="SendFriendRequest(friendRequestUser.OrignalObject)">Add Friend</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

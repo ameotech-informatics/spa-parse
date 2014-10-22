@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+ 
+</head>
+<body>
+ 
+     <div class="container">
+        <div class="offset4 span4 col-md-6 col-md-offset-3">
+            <hr />
+            <div class="text-center">
+                <label for="lastname" class="control-label"><span style="color:#387db8"> Please login to continue.</span></label>
+            </div>
+            <hr />
+            <div class="text-left" >
+                
+               <span><i class="glyphicon glyphicon-user"></i></span><input type="text" ng-model="User.UserName" class=" form-control text-center inputBorder margin-left: 8px;" placeholder="Username" />
+            </div>
+            <br />
+
+            <div class="text-left">
+                <span><i class="glyphicon glyphicon-lock"></i></span><input type="password" ng-model="User.Password" class="form-control text-center inputBorder margin-left: 8px;" placeholder="Password" />
+            </div>
+            <hr />
+            <div class="text-center">
+                <button type="submit" ng-click="SignIn()" class="btn :hover btn-primary">Login</button>            
+            </div>
+            <hr />
+
+            <div class="text-center">
+                <a href="#"><label for="lastname" class="control-label text-muted">Not Yet a Member?</label></a>
+            </div>
+            <div class="text-center">
+                <a href="#SignUp"><button type="submit" class="btn :hover btn-primary">Sign Up Now</button></a>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>

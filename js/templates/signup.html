@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+  
+</head>
+<body>
+     <div class="container">
+        <div class="offset4 span4 col-md-6 col-md-offset-3">
+            <hr />
+            <div class="text-center">
+                <label for="lastname" class="control-label text-muted"><span style="color: #387db8">Please complete the form to sign up</span></label>
+            </div>
+            <hr />
+            <div class="text-center">
+                <input type="text" class="form-control text-center inputBorder" ng-model="User.UserName" id="Text1" placeholder="Username" />
+            </div>
+            <br />
+            <div class="text-center">
+                <input type="password" class="form-control text-center inputBorder" ng-model="User.Password" id="Text2" placeholder="Password" />
+            </div>
+            <br />
+            <div class="text-center">
+                <input type="text" class="form-control text-center inputBorder" ng-model="User.Email" id="Text3" placeholder="Email" />
+            </div>
+            <hr />
+            <div class="text-center">
+                <input type="button" class="btn :hover btn-primary" ng-click="SignUp()" value="SignUp" />
+            </div>
+            </div>
+        </div>
+</body>
+</html>
